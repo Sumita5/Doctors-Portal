@@ -1,0 +1,90 @@
+/* Header Component Design- Start */
+.header-container {
+    height:800px;
+    position:relative;   
+}
+.header-container::after, .header-container::before {
+    height:700px;
+    content:' ';
+    position: absolute;
+    top: 0;
+}
+.header-container::after {
+    width: 25%;
+    right: 0;
+    background-color: #3A4256;
+    z-index: -50;
+}
+.header-container::before {
+    left: 0;
+    width: 75%;
+    background: url('../../../images/headerBG.png');
+}
+/* Header Component Design- End */
+/* MakeAppointment Component Design- Start */
+.make-appointment, .contact {
+    background-image:
+    linear-gradient(to right, rgba(36, 41, 73, 0.8), rgba(36, 41, 73, 0.8)),
+    url('../../../images/appointmentBG.png');
+    width: 100%;
+    
+    background-size: cover;
+    margin: 150px 0px 100px 0px;
+}
+.make-appointment img {
+    height: 600px;
+    /* margin-top: -150px; */
+    transform: translateY(-150px);
+}
+/* MakeAppointment Component Design- End */
+/* Blog Component Design- Start */
+.blog .card-header{
+    border: 0;
+    background-color: transparent;
+}
+.blog .card:hover{
+    background-image: linear-gradient(75deg, #19D3AE,#0fcfec);
+    transition:  .1s  all ease-in-out !important;
+    opacity: 0.9;
+}
+.blog .card:hover .card-body{
+    background-image: url(../../../images/quote.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 60%;
+}
+.blog .card:hover h6,
+.blog .card:hover h5,
+.blog .card:hover p{
+    color: #ffffff !important;
+    font-weight: bold;
+    font-size: 25px;
+}
+.blog .card:hover img,
+.blog .card:hover .card-text{
+    display: none;
+}
+/* Blog Component Design- End */
+/* Footer Component Design- Start */
+.footer-area{
+    background-image: url(../../../images/footer-bg.png);
+    background-size: cover;
+}
+
+.footer-area li{
+    padding-bottom: 10px;
+}
+
+.social-media .icon{
+    height: 40px;
+    width: 40px;
+    color: #1cc7c1;
+    border-radius: 50%;
+    border: 1px solid #6ACECE;
+    padding: 10px;
+}
+.social-media .icon:hover{
+    background-color: #6ACECE ;
+    color:white;
+}
+/* Footer Component Design- End */
